@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
     //MAUI utiliza C# y XAML, Flutter usa Dart, React Native usa JavaScript/TypeScript y 
-    //Kotlin Multiplaform usa kotlin para compartir codigo.
+    //Kotlin Multiplaform usa kotlin para compartir el codigo.
     private void OnAgregarClicked(object sender, EventArgs e)
     {
         string texto = TareaEntry.Text?.Trim() ?? "";
