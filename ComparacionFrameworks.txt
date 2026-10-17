@@ -39,12 +39,12 @@ Proyecto: Lista de Tareas
        }
    }
 
-CONCLUSIÓN
+Conclusion
 Las cuatro tecnologías nos permiten desarrollar
 aplicaciones multiplataforma. Se diferencian en
 el lenguaje, las herramientas, el rendimiento
 según la aplicación y la forma de compartir código.
 
-NOTA
+Nota
 Los ejemplos son ilustrativos; no son aplicaciones
 completas ni se han ejecutado en este proyecto.
