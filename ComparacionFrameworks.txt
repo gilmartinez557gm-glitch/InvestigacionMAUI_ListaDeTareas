@@ -1,0 +1,50 @@
+
+COMPARACIÓN DE FRAMEWORKS MULTIPLATAFORMA
+Proyecto: Lista de Tareas
+
+1. .NET MAUI — C# y XAML
+   Utiliza C# para la lógica y XAML para diseñar
+   interfaces. En este proyecto permite agregar,
+   completar y eliminar tareas.
+
+2. FLUTTER — DART
+   Utiliza widgets para construir la interfaz.
+   Ejemplo:
+   Text('MIS TAREAS')
+   TextField()
+   ElevatedButton(
+     onPressed: () {},
+     child: Text('Agregar tarea'),
+   )
+
+3. REACT NATIVE — JAVASCRIPT / TYPESCRIPT
+   Utiliza componentes para construir interfaces.
+   Ejemplo:
+   <View>
+     <Text>MIS TAREAS</Text>
+     <TextInput placeholder="Nueva tarea" />
+     <Button title="Agregar tarea" onPress={() => {}} />
+   </View>
+
+4. KOTLIN MULTIPLATFORM — KOTLIN
+   Permite compartir lógica entre plataformas.
+   Con Compose Multiplatform, la interfaz puede
+   construirse con componentes declarativos.
+   Ejemplo:
+   @Composable
+   fun ListaTareas() {
+       Column {
+           Text("MIS TAREAS")
+           Text("Nueva tarea")
+       }
+   }
+
+CONCLUSIÓN
+Las cuatro tecnologías permiten desarrollar
+aplicaciones multiplataforma. Se diferencian en
+el lenguaje, las herramientas, el rendimiento
+según la aplicación y la forma de compartir código.
+
+NOTA
+Los ejemplos son ilustrativos; no son aplicaciones
+completas ni se han ejecutado en este proyecto.

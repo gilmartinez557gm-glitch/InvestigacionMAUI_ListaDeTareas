@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+    <!--MAUI define la interfaz con XAML; Flutter usa widgets,
+     React Native componentes y Kotlin puede usar Compose-->
+  <ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="InvestigacionMAUI_ListaDeTareas.MainPage"
+    Title="Lista de tareas"
+    BackgroundColor="#F3F6FC">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="24"
+            Spacing="18">
+
+            <Label
+                Text="MIS TAREAS"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="#173B70"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Organiza tu día y cumple tus objetivos"
+                FontSize="14"
+                TextColor="#64748B"
+                HorizontalOptions="Center" />
+
+            <Border
+                BackgroundColor="#FFFFFF"
+                StrokeThickness="0"
+                Padding="18">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="16" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label
+                        Text="Nueva tarea"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="#173B70" />
+
+                    <Entry
+                        x:Name="TareaEntry"
+                        Placeholder="¿Qué necesitas hacer?"
+                        BackgroundColor="#F1F5F9"
+                        TextColor="#1E293B" />
+
+                    <Button
+                        x:Name="AgregarBtn"
+                        Text="+ Agregar tarea"
+                        Clicked="OnAgregarClicked"
+                        BackgroundColor="#2563EB"
+                        TextColor="White"
+                        CornerRadius="10" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label
+                Text="Mis pendientes"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="#173B70" />
+
+
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10">
+                <Border Grid.Column="0"
+            BackgroundColor="#DBEAFE"
+            Padding="10">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="12" />
+                    </Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="TOTAL"
+                   FontSize="11"
+                   HorizontalOptions="Center"
+                   TextColor="#1D4ED8" />
+                        <Label x:Name="TotalLabel"
+                   Text="0"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#1D4ED8" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="1"
+            BackgroundColor="#FEF3C7"
+            Padding="10">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="12" />
+                    </Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="PENDIENTES"
+                   FontSize="9"
+                   HorizontalOptions="Center"
+                   TextColor="#92400E" />
+                        <Label x:Name="ContadorLabel"
+                   Text="0"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#92400E" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="2"
+            BackgroundColor="#DCFCE7"
+            Padding="10">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="12" />
+                    </Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="LISTAS"
+                   FontSize="9"
+                   HorizontalOptions="Center"
+                   TextColor="#166534" />
+                        <Label x:Name="CompletadasLabel"
+                   Text="0"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#166534" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+
+
+            <VerticalStackLayout
+                x:Name="ListaTareas"
+                Spacing="10" />
+
+            <Label
+                x:Name="MensajeLabel"
+                FontSize="14"
+                TextColor="#2563EB"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Desarrollado con .NET MAUI y C#"
+                FontSize="12"
+                TextColor="#64748B"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
