@@ -50,7 +50,7 @@
 
                     <Button
                         x:Name="AgregarBtn"
-                        Text="+ Agregar tarea"
+                        Text="+ Agregar Nueva tarea"
                         Clicked="OnAgregarClicked"
                         BackgroundColor="#2563EB"
                         TextColor="White"
@@ -59,7 +59,7 @@
             </Border>
 
             <Label
-                Text="Mis pendientes"
+                Text="Mis tareas pendientes"
                 FontSize="20"
                 FontAttributes="Bold"
                 TextColor="#173B70" />
@@ -113,7 +113,7 @@
                         <RoundRectangle CornerRadius="12" />
                     </Border.StrokeShape>
                     <VerticalStackLayout Spacing="4">
-                        <Label Text="LISTAS"
+                        <Label Text="REALIZADAS"
                    FontSize="9"
                    HorizontalOptions="Center"
                    TextColor="#166534" />
