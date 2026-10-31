@@ -1,2 +1,2 @@
 # InvestigacionMAUI_ListaDeTareas
-Contribucion al proyecto
+Contribucion al proyecto de clase
